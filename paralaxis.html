@@ -5,144 +5,234 @@
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>Paralaxis - Tecnologia Educacional</title>
     <link rel="stylesheet" href="css/paralaxis.css">
-    <link href="https://fonts.googleapis.com/css2?family=Inter:wght@400;600;800&display=swap" rel="stylesheet">
+    <link href="https://fonts.googleapis.com/css2?family=Inter:wght@400;600;800&family=Space+Grotesk:wght@400;500;700&display=swap" rel="stylesheet">
+    <link href="https://fonts.googleapis.com/css2?family=Material+Symbols+Outlined:opsz,wght,FILL,GRAD@20..48,400,0,1" rel="stylesheet">
 </head>
 <body>
 
-    <header class="navbar">
-        <div class="container flex-space">
-            <div class="logo">PARALAXIS <img src="imgs/Group 5.svg" alt="logo Paralaxis"></div>
-            <nav class="links">
-                <a href="#">Início</a>
-                <a href="#">Método</a>
-                <a href="#">POO_WER</a>
-                <a href="#">Equipe</a>
-                <a href="#">Contato</a>
-            </nav>
+<header class="navbar">
+    <div class="container flex-space">
+        <div class="logo">PARALAXIS <img src="imgs/Group 5.svg" alt="logo Paralaxis"></div>
+        <nav class="links">
+            <a href="#">Início</a>
+            <a href="#">Método</a>
+            <a href="#">POO_WER</a>
+            <a href="#">Equipe</a>
+            <a href="#">Contato</a>
+        </nav>
+    </div>
+</header>
+
+<main>
+    <section class="hero container">
+        <div class="hero-texto">
+            <span class="tag-fatec">FATEC REGISTRO + DSM 2026</span>
+            <h1>Transformando linhas de código em <span class="azul">conquistas.</span></h1>
+            <p>A Paralaxis une neurociência e gamificação para simplificar conceitos complexos de programação para a nova geração de talentos tech.</p>
+            <div class="botoes">
+                <button class="btn-principal">Agendar Demonstração</button>
+                <button class="btn-outline">Ver o Jogo</button>
+            </div>
         </div>
-    </header>
+        <div class="hero-stats">
+            <div class="card-stats">
+                <span><img src="imgs/Group 5.svg" alt="logo Paralaxis" style="height: 40px;"></span>
+                <h2>+85% Engajamento</h2>
+                <p>Média de retenção de conteúdo em alunos que utilizam nossas ferramentas.</p>
+            </div>
+        </div>
+    </section>
 
-    <main>
-        <section class="hero container">
-            <div class="hero-texto">
-                <span class="tag-fatec">FATEC REGISTRO + DSM 2026</span>
-                <h1>Transformando linhas de código em <span class="azul">conquistas.</span></h1>
-                <p>A Paralaxis une neurociência e gamificação para simplificar conceitos complexos de programação para a nova geração de talentos tech.</p>
-                <div class="botoes">
-                    <button class="btn-principal">Agendar Demonstração</button>
-                    <button class="btn-outline">Ver o Jogo</button>
+    <section class="recursos container">
+        <div class="chamada-central">
+            <span class="subtitulo">NOSSO ECOSSISTEMA</span>
+            <h2>Como ensinamos o <span class="azul">futuro?</span></h2>
+            <p>Uma jornada pedagógica completa baseada em três pilares fundamentais.</p>
+        </div>
+        <div class="grid-cards">
+            <div class="card"><span class="emoji">🧠</span><h3>Aprendizado Ativo</h3><p>O aluno protagonista, Trial and error seguro para absorver lógica organicamente.</p></div>
+            <div class="card"><span class="emoji">📈</span><h3>Dashboard profissional</h3><p>Dashboards em tempo real para professores identificarem dificuldades.</p></div>
+            <div class="card"><span class="emoji">💎</span><h3>Abstração Progressiva</h3><p>Do visual ao código puro. Transição suave para Python e JavaScript.</p></div>
+        </div>
+    </section>
+
+    <section class="poower-section">
+        <div class="container flex-poower">
+            <div class="poower-info">
+                <span class="tag-novidade">🎮 NOVIDADE</span>
+                <h2>Conheça o <span class="roxo">POO_WER</span></h2>
+                <p>Um RPG Épico onde conceitos de Programação Orientada a Objetos são suas habilidades mágicas. Crie classes, instancie heróis, utilize herança para ganhar poderes e encapsule seus segredos contra os bugs inimigos.</p>
+                <ul class="lista-check">
+                    <li>✅ Classes como Arquétipos de Personagens</li>
+                    <li>✅ Polimorfismo em Combates Táticos</li>
+                    <li>✅ Missões baseadas em Refatoração</li>
+                </ul>
+            </div>
+
+            <!-- Componente interativo (substitui os SVGs) -->
+            <div class="poower-mockup">
+                <!-- Card do Mago -->
+                <div id="mockMageCard" class="mockup-glass">
+                    <div class="mockup-inner">
+                        <div class="mage-row">
+                            <div class="mage-avatar-col">
+                                <div class="mage-circle"><span>🧙‍♂️✨</span></div>
+                                <div class="mage-name">MAGO MESTRE</div>
+                            </div>
+                            <div style="flex:1">
+                                <div class="mage-bubble"><strong>📜 Bem-vindo à Tribo da Sobrecarga, jovem mago!</strong></div>
+                                <div class="mage-bubble"><span style="color:#ff7fe5; font-weight:700;">Sobrecarga</span> é quando um mesmo método tem versões diferentes, mudando os parâmetros. Exemplo: lançar <code style="background:#00000066; padding:2px 6px; border-radius:10px;">poder()</code> com 1, 2 ou 3 cristais – cada um causa um efeito distinto.</div>
+                                <div class="code-block-mini">
+                                    // Exemplo:<br>
+                                    poder(int cristal) → "🔥 Chama"<br>
+                                    poder(int cristal, String tipo) → "⚡ Raio elemental"<br>
+                                    poder() → "🔮 Magia arcana"
+                                </div>
+                                <div class="mage-bubble"><em>✨ Seu objetivo: complete as lacunas do código para lançar a magia com 2 cristais. Vamos praticar?</em></div>
+                                <div style="display: flex; gap: 12px; flex-wrap: wrap; margin-top: 8px;">
+                                    <button id="mockPraticar" class="btn-mage"><span class="material-symbols-outlined">play_arrow</span> PRATICAR</button>
+                                    <button id="mockExplicar" class="btn-mage-outline"><span class="material-symbols-outlined">help</span> Mais explicação</button>
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+
+                <!-- Card do Quiz (inicialmente oculto) -->
+                <div id="mockQuizCard" class="mockup-glass hidden-mock" style="margin-top: 0;">
+                    <div class="mockup-inner">
+                        <div style="display: flex; justify-content: space-between; align-items: baseline; margin-bottom: 8px;">
+                            <span style="background:#9700d230; padding:2px 12px; border-radius:20px; font-size:0.7rem; font-weight:bold;">📋 QUIZ – TRIBO DA SOBRECARGA</span>
+                            <span style="color:#aba9bf; font-size:0.75rem;">Pergunta 1 de 3</span>
+                        </div>
+                        <div class="quiz-progress"><div class="quiz-fill"></div></div>
+                        <div class="pergunta-quiz">O que caracteriza a sobrecarga de métodos em POO?</div>
+                        <div id="mockOptions">
+                            <label class="option-row" data-val="0">
+                                <input type="radio" name="quizOverload" value="0" class="quiz-radio">
+                                <span class="custom-radio"></span>
+                                <span>Ter o mesmo nome e parâmetros idênticos.</span>
+                            </label>
+                            <label class="option-row" data-val="1">
+                                <input type="radio" name="quizOverload" value="1" class="quiz-radio">
+                                <span class="custom-radio"></span>
+                                <span>Ter o mesmo nome e parâmetros diferentes (tipo ou quantidade).</span>
+                            </label>
+                            <label class="option-row" data-val="2">
+                                <input type="radio" name="quizOverload" value="2" class="quiz-radio">
+                                <span class="custom-radio"></span>
+                                <span>Ter nomes diferentes e parâmetros iguais.</span>
+                            </label>
+                            <label class="option-row" data-val="3">
+                                <input type="radio" name="quizOverload" value="3" class="quiz-radio">
+                                <span class="custom-radio"></span>
+                                <span>Ser obrigatório usar a palavra-chave 'override'.</span>
+                            </label>
+                        </div>
+                        <button id="mockVerificar" class="verify-btn">✨ VERIFICAR RESPOSTA ✨</button>
+                        <div id="mockFeedback" class="feedback-mock">💡 Escolha uma alternativa e clique em verificar.</div>
+                        <div id="mockVoltar" class="back-link-mock"><span class="material-symbols-outlined">arrow_back</span> ◀ VOLTAR PARA O MAGO</div>
+                    </div>
                 </div>
             </div>
-            <div class="hero-stats">
-                <div class="card-stats">
-                    <span><img src="imgs/Group 5.svg" alt="logo Paralaxis"></span>
-                    <h2>+85% Engajamento</h2>
-                    <p>Média de retenção de conteúdo em alunos que utilizam nossas ferramentas.</p>
-                </div>
-            </div>
-        </section>
+        </div>
+        <div class="container" style="text-align: center; padding: 20px 0;">
+            <a href="index.html" class="btn-principal">Ir para o site do jogo para saber mais</a>
+        </div>
+    </section>
 
-        <section class="recursos container">
-            <div class="chamada-central">
-                <span class="subtitulo">NOSSO ECOSSISTEMA</span>
-                <h2>Como ensinamos o <span class="azul">futuro?</span></h2>
-                <p>Uma jornada pedagógica completa baseada em três pilares fundamentais.</p>
-            </div>
+    <section class="equipe container">
+        <h2>Fundadores</h2>
+        <p>Time de Desenvolvimento de Software Multiplataforma</p>
+        <div class="lista-membros">
+            <div class="membro"><div class="avatar-circulo">PM</div><strong>Pamela</strong><br><span>Product Owner</span></div>
+            <div class="membro"><div class="avatar-circulo">JV</div><strong>João Vitor</strong><br><span>Lead Developer</span></div>
+            <div class="membro"><div class="avatar-circulo">MS</div><strong>Matheus</strong><br><span>UX Designer</span></div>
+            <div class="membro"><div class="avatar-circulo">VT</div><strong>Victor</strong><br><span>Game Dev</span></div>
+            <div class="membro"><div class="avatar-circulo">VC</div><strong>Vinícius</strong><br><span>Game Dev</span></div>
+        </div>
+    </section>
 
-            <div class="grid-cards">
-                <div class="card">
-                    <span class="emoji">🧠</span>
-                    <h3>Aprendizado Ativo</h3>
-                    <p>O aluno protagonista, Trial and error seguro para absorver lógica organicamente.</p>
-                </div>
-                <div class="card">
-                    <span class="emoji">📈</span>
-                    <h3>Dashboard profissional</h3>
-                    <p>Dashboards em tempo real para professores identificarem dificuldades.</p>
-                </div>
-                <div class="card">
-                    <span class="emoji">💎</span>
-                    <h3>Abstração Progressiva</h3>
-                    <p>Do visual ao código puro. Transição suave para Python e JavaScript.</p>
-                </div>
+    <section class="cta container">
+        <div class="cta-box">
+            <h2>Leve a Paralaxis para sua instituição</h2>
+            <p>Estamos selecionando 5 escolas para o nosso programa piloto 2026.</p>
+            <div class="form-contato">
+                <input type="email" placeholder="Seu e-mail institucional">
+                <button class="btn-principal">Solicitar Contato</button>
             </div>
-        </section>
+        </div>
+    </section>
+</main>
 
-        <section class="poower-section">
-            <div class="container flex-poower">
-                <div class="poower-info">
-                    <span class="tag-novidade">🎮 NOVIDADE</span>
-                    <h2>Conheça o <span class="roxo">POO_WER</span></h2>
-                    <p>Um RPG Épico onde conceitos de Programação Orientada a Objetos são suas habilidades mágicas. Crie classes, instancie heróis, utilize herança para ganhar poderes e encapsule seus segredos contra os bugs inimigos.</p>
-                    <ul class="lista-check">
-                        <li>✅ Classes como Arquétipos de Personagens</li>
-                        <li>✅ Polimorfismo em Combates Táticos</li>
-                        <li>✅ Missões baseadas em Refatoração</li>
-                    </ul>
-                </div>
-                <div class="poower-img">
-                    <div class="mockup-jogo">
-                        <img src="imgs/Glassmorphism Card.svg" alt=""></div>
-                        <img src="imgs/Section - Quiz Container.svg" alt="">
-                </div>
-            </div>
-            <div class="container" style="text-align: center; padding: 20px 0;">
-                <a href="index.html" class="btn-principal">Ir para o site do jogo para saber mais</a>
-            </div>
-        </section>
+<footer>
+    <p>© 2024 Paralaxis Tecnologia Educacional. Feito por alunos da Fatec Registro.</p>
+</footer>
 
-        <section class="equipe container">
-            <h2>Fundadores</h2>
-            <p>Time de Desenvolvimento de Software Multiplataforma</p>
-            <div class="lista-membros">
-                <div class="membro">
-                    <div class="avatar-circulo">PM</div>
-                    <strong>Pamela</strong>
-                    <br>
-                    <span>Product Owner</span>
-                </div>
-                <div class="membro">
-                    <div class="avatar-circulo">JV</div>
-                    <strong>João Vitor</strong>
-                    <br>
-                    <span>Lead Developer</span>
-                </div>
-                <div class="membro">
-                    <div class="avatar-circulo">MS</div>
-                    <strong>Matheus</strong>
-                    <br>
-                    <span>UX Designer</span>
-                </div>
-                <div class="membro">
-                    <div class="avatar-circulo">VT</div>
-                    <strong>Victor</strong>
-                    <br>
-                    <span>Game Dev</span>
-                </div>
-                <div class="membro">
-                    <div class="avatar-circulo">VC</div>
-                    <strong>Vinícius</strong>
-                    <br>
-                    <span>Game Dev</span>
-                </div>
-            </div>
-        </section>
+<script>
+    (function() {
+        const mageDiv = document.getElementById('mockMageCard');
+        const quizDiv = document.getElementById('mockQuizCard');
+        const praticar = document.getElementById('mockPraticar');
+        const explicar = document.getElementById('mockExplicar');
+        const verificar = document.getElementById('mockVerificar');
+        const feedback = document.getElementById('mockFeedback');
+        const voltar = document.getElementById('mockVoltar');
 
-        <section class="cta container">
-            <div class="cta-box">
-                <h2>Leve a Paralaxis para sua instituição</h2>
-                <p>Estamos selecionando 5 escolas para o nosso programa piloto 2026.</p>
-                <div class="form-contato">
-                    <input type="email" placeholder="Seu e-mail institucional">
-                    <button class="btn-principal">Solicitar Contato</button>
-                </div>
-            </div>
-        </section>
-    </main>
+        function showQuiz() {
+            mageDiv.classList.add('hidden-mock');
+            quizDiv.classList.remove('hidden-mock');
+            document.querySelectorAll('input[name="quizOverload"]').forEach(r => r.checked = false);
+            if (feedback) feedback.innerHTML = "📖 Selecione a alternativa correta sobre sobrecarga e confira!";
+        }
+        function showMage() {
+            quizDiv.classList.add('hidden-mock');
+            mageDiv.classList.remove('hidden-mock');
+        }
 
-    <footer>
-        <p>© 2024 Paralaxis Tecnologia Educacional. Feito por alunos da Fatec Registro.</p>
-    </footer>
+        praticar?.addEventListener('click', (e) => { e.preventDefault(); showQuiz(); });
+        voltar?.addEventListener('click', (e) => { e.preventDefault(); showMage(); });
 
+        explicar?.addEventListener('click', () => {
+            const toast = document.createElement('div');
+            toast.className = 'toast-mock';
+            toast.innerHTML = '🧙 Explicação: Sobrecarga = mesmo nome do método, ASSINATURAS diferentes (quantidade/tipo de parâmetros). Permite múltiplas versões do mesmo feitiço!';
+            document.body.appendChild(toast);
+            setTimeout(() => toast.remove(), 4000);
+        });
+
+        verificar?.addEventListener('click', () => {
+            const selected = document.querySelector('input[name="quizOverload"]:checked');
+            if (!selected) {
+                feedback.innerHTML = "⚠️ Selecione uma alternativa antes de verificar!";
+                feedback.style.borderLeftColor = "#ff8a9f";
+                return;
+            }
+            const isCorrect = (selected.value === "1");
+            if (isCorrect) {
+                feedback.innerHTML = "✅✨ CORRETO! ✨✅<br> Sobrecarga (overloading) = mesmo nome, parâmetros diferentes (tipo ou quantidade). Excelente, mago!";
+                feedback.style.background = "#0a3a1e80";
+                feedback.style.borderLeftColor = "#a3e635";
+            } else {
+                let msg = "";
+                if (selected.value === "0") msg = "❌ Parâmetros idênticos geram conflito. Sobrecarga exige assinaturas diferentes.";
+                else if (selected.value === "2") msg = "❌ Nomes diferentes não caracterizam sobrecarga (seriam métodos distintos).";
+                else if (selected.value === "3") msg = "❌ 'override' é usado em sobrescrita (herança), não sobrecarga.";
+                else msg = "❌ Incorreto. A resposta certa: mesmo nome com parâmetros diferentes.";
+                feedback.innerHTML = `${msg}<br> 🔁 Tente novamente!`;
+                feedback.style.background = "#4a001a80";
+                feedback.style.borderLeftColor = "#ff7f7f";
+            }
+        });
+
+        // Permite clicar na linha inteira para marcar o radio
+        document.querySelectorAll('.option-row').forEach(row => {
+            row.addEventListener('click', (e) => {
+                const radio = row.querySelector('.quiz-radio');
+                if (radio && !radio.checked) radio.checked = true;
+            });
+        });
+    })();
+</script>
 </body>
 </html>
