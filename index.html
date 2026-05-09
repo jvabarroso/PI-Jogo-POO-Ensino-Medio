@@ -1,151 +1,311 @@
-<!DOCTYPE html>
+<!doctype html>
 <html lang="pt-BR">
-<head>
-    <meta charset="UTF-8">
-    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
     <title>POO_WER | Jogo Educacional de POO</title>
-    <meta name="description" content="POO_WER é um jogo sério para ensino de Programação Orientada a Objetos para alunos do ensino médio.">
-    <link rel="stylesheet" href="css/style.css">
-</head>
-<body>
-    <div class="page-shell">
-        <header class="topbar">
-            <div class="brand">
-                <span class="brand-name">PARALAXIS</span>
-                <span class="brand-product">POO_WER</span>
+    <meta
+      name="description"
+      content="POO_WER é um jogo sério para ensino de Programação Orientada a Objetos para alunos do ensino médio."
+    />
+    <!-- Bootstrap 5 CSS -->
+    <link
+      href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.3/dist/css/bootstrap.min.css"
+      rel="stylesheet"
+    />
+    <!-- CSS customizado (bastante enxuto) -->
+    <link rel="stylesheet" href="css/style.css" />
+  </head>
+  <body class="pt-5 pt-md-4">
+    <div class="page-shell container">
+      <!-- Navbar fixa -->
+      <nav class="navbar navbar-expand-md fixed-top topbar">
+        <div class="container">
+          <div class="brand d-flex align-items-baseline gap-3">
+            <span class="brand-name">PARALAXIS</span>
+            <span class="brand-product"
+              ><img src="imgs/logo-poower.svg" alt="Logo POO_WER" height="30"
+            /></span>
+          </div>
+          <button
+            class="navbar-toggler border-0"
+            type="button"
+            data-bs-toggle="collapse"
+            data-bs-target="#mainNav"
+          >
+            <span class="navbar-toggler-icon"></span>
+          </button>
+          <div
+            class="collapse navbar-collapse justify-content-end"
+            id="mainNav"
+          >
+            <div class="navbar-nav gap-3">
+              <a class="nav-link" href="#inicio">Início</a>
+              <a class="nav-link" href="#sobre">Sobre</a>
+              <a class="nav-link" href="#onde">Onde jogar</a>
+              <a class="nav-link" href="#diretores">Instituições</a>
+              <a class="nav-link" href="#faq">FAQ</a>
             </div>
-            <nav class="main-nav">
-                <a href="#inicio">Início</a>
-                <a href="#sobre">Sobre</a>
-                <a href="#onde">Onde jogar</a>
-                <a href="#diretores">Instituições</a>
-                <a href="#faq">FAQ</a>
-            </nav>
-        </header>
+          </div>
+        </div>
+      </nav>
 
-        <main>
-            <section class="hero" id="inicio">
-                <div class="hero-copy">
-                    <span class="eyebrow">Jogo sério educacional</span>
-                    <h1>POO_WER: aprenda Programação Orientada a Objetos jogando</h1>
-                    <p>Explore um universo gamificado onde cada desafio transforma planetas e leva estudantes do ensino médio a dominar classes, objetos, herança, encapsulamento e polimorfismo.</p>
-                    <div class="hero-actions">
-                        <a href="#onde" class="button primary">Jogue agora no navegador</a>
-                        <a href="#diretores" class="button ghost">Ver vantagens para escolas</a>
-                    </div>
-                </div>
-                <aside class="hero-panel">
-                    <div class="panel-header">terminal.poower</div>
-                    <pre class="terminal">
+      <main>
+        <!-- Hero -->
+        <section class="hero row align-items-center g-5 py-5 my-4" id="inicio">
+          <div class="col-lg-6">
+            <span class="eyebrow d-inline-block mb-3"
+              >Jogo sério educacional</span
+            >
+            <h1 class="fw-bold mb-4">
+              POO_WER: aprenda Programação Orientada a Objetos jogando
+            </h1>
+            <p class="text-secondary mb-4">
+              Explore um universo gamificado onde cada desafio transforma
+              planetas e leva estudantes do ensino médio a dominar classes,
+              objetos, herança, encapsulamento e polimorfismo.
+            </p>
+            <div class="d-flex gap-3 flex-wrap">
+              <a href="#onde" class="btn btn-primary-custom"
+                >Jogue agora no navegador</a
+              >
+              <a href="#diretores" class="btn btn-ghost-custom"
+                >Ver vantagens para escolas</a
+              >
+            </div>
+          </div>
+          <aside class="col-lg-6">
+            <div class="hero-panel p-4 p-md-5">
+              <div class="panel-header small text-uppercase mb-3">
+                terminal.poower
+              </div>
+              <pre class="terminal p-3 mb-0">
 $ iniciar poower --modo=educacional
 > Carregando módulos: navegação, personagens, desafios
 > Status: pronto para a missão
-> Objetivo: aprender POO com prática e propósito
-                    </pre>
-                </aside>
-            </section>
+> Objetivo: aprender POO com prática e propósito</pre
+              >
+            </div>
+          </aside>
+        </section>
 
-            <section class="section" id="sobre">
-                <h2>O que é este jogo?</h2>
-                <p>POO_WER é uma plataforma interativa desenvolvida para ensinar Programação Orientada a Objetos a alunos do ensino médio de forma lúdica, acessível e com foco em resultados reais.</p>
-                <p>O jogo simula uma jornada interplanetária onde cada planeta representa um conceito fundamental de POO: classes, objetos, herança, encapsulamento e polimorfismo. Os estudantes resolvem desafios práticos que transformam visualmente os mundos, reforçando o aprendizado através da ação.</p>
-                <div class="cards-grid">
-                    <article class="info-card">
-                        <h3>Universo gamificado</h3>
-                        <p>Cada planeta representa um conceito de POO e evolui à medida que o estudante resolve desafios.</p>
-                    </article>
-                    <article class="info-card">
-                        <h3>Progresso visível</h3>
-                        <p>As conquistas e transformações do mundo mostram o impacto direto do aprendizado.</p>
-                    </article>
-                    <article class="info-card">
-                        <h3>Metodologia ativa</h3>
-                        <p>O aluno aprende criando, testando e ajustando código em um ambiente inspirado em narrativas.</p>
-                    </article>
+        <!-- Seção Sobre -->
+        <section class="py-5" id="sobre">
+          <h2 class="fw-bold mb-3">O que é este jogo?</h2>
+          <p class="text-secondary mb-4">
+            POO_WER é uma plataforma interativa desenvolvida para ensinar
+            Programação Orientada a Objetos a alunos do ensino médio de forma
+            lúdica, acessível e com foco em resultados reais.
+          </p>
+          <p class="text-secondary mb-5">
+            O jogo simula uma jornada interplanetária onde cada planeta
+            representa um conceito fundamental de POO...
+          </p>
+          <div class="row g-4 mb-5">
+            <div class="col-md-4">
+              <article class="custom-card p-4">
+                <h3 class="h5 fw-bold">Universo gamificado</h3>
+                <p class="text-secondary mb-0">
+                  Cada planeta representa um conceito de POO e evolui à medida
+                  que o estudante resolve desafios.
+                </p>
+              </article>
+            </div>
+            <div class="col-md-4">
+              <article class="custom-card p-4">
+                <h3 class="h5 fw-bold">Progresso visível</h3>
+                <p class="text-secondary mb-0">
+                  As conquistas e transformações do mundo mostram o impacto
+                  direto do aprendizado.
+                </p>
+              </article>
+            </div>
+            <div class="col-md-4">
+              <article class="custom-card p-4">
+                <h3 class="h5 fw-bold">Metodologia ativa</h3>
+                <p class="text-secondary mb-0">
+                  O aluno aprende criando, testando e ajustando código em um
+                  ambiente inspirado em narrativas.
+                </p>
+              </article>
+            </div>
+          </div>
+          <div class="row g-4">
+            <div class="col-md-6">
+              <article class="custom-card p-4">
+                <div
+                  class="image-placeholder bg-dark bg-opacity-25 rounded-3 p-5 text-center mb-3"
+                >
+                  Imagem do painel principal do jogo
                 </div>
-                <div class="image-grid">
-                    <article class="image-card">
-                        <div class="image-placeholder">Imagem do painel principal do jogo</div>
-                        <h3>Página principal do jogo</h3>
-                        <p>Mostre aqui como a tela inicial guia o aluno para escolher planetas e iniciar desafios.</p>
-                    </article><br>
-                    <article class="image-card">
-                        <div class="image-placeholder">Imagem da atividade prática</div>
-                        <h3>Atividade prática</h3>
-                        <p>Use este espaço para ilustrar uma missão ou desafio que explora um conceito de POO.</p>
-                    </article>
+                <h3 class="h5 fw-bold">Página principal do jogo</h3>
+                <p class="text-secondary mb-0">
+                  Mostre aqui como a tela inicial guia o aluno para escolher
+                  planetas e iniciar desafios.
+                </p>
+              </article>
+            </div>
+            <div class="col-md-6">
+              <article class="custom-card p-4">
+                <div
+                  class="image-placeholder bg-dark bg-opacity-25 rounded-3 p-5 text-center mb-3"
+                >
+                  Imagem da atividade prática
                 </div>
-            </section>
+                <h3 class="h5 fw-bold">Atividade prática</h3>
+                <p class="text-secondary mb-0">
+                  Use este espaço para ilustrar uma missão ou desafio que
+                  explora um conceito de POO.
+                </p>
+              </article>
+            </div>
+          </div>
+        </section>
 
-            <section class="section alt" id="onde">
-                <h2>Onde posso jogá-lo?</h2>
-                <p>POO_WER foi concebido para ser acessado diretamente no navegador, sem instalação. Ele também funciona em laboratórios escolares, tablets e computadores pessoais.</p>
-                <ul class="feature-list">
-                    <li>Execução web para acesso fácil em sala de aula</li>
-                    <li>Compatível com ferramentas e dispositivos escolares</li>
-                    <li>Implantação simples para professores e coordenadores</li>
-                </ul>
-            </section>
+        <!-- Onde jogar -->
+        <section class="py-5" id="onde">
+          <h2 class="fw-bold mb-3">Onde posso jogá-lo?</h2>
+          <p class="text-secondary mb-4">
+            POO_WER foi concebido para ser acessado diretamente no navegador,
+            sem instalação...
+          </p>
+          <ul class="feature-list list-unstyled">
+            <li class="ps-4 position-relative mb-2">
+              Execução web para acesso fácil em sala de aula
+            </li>
+            <li class="ps-4 position-relative mb-2">
+              Compatível com ferramentas e dispositivos escolares
+            </li>
+            <li class="ps-4 position-relative mb-2">
+              Implantação simples para professores e coordenadores
+            </li>
+          </ul>
+        </section>
 
-            <section class="section" id="diretores">
-                <h2>Como diretor, vale a pena?</h2>
-                <p>Sim. O jogo oferece um recurso pedagógico moderno, alinhado a metodologias ativas e com potencial para engajar alunos de forma natural. Além dos benefícios educacionais, inclui ferramentas para acompanhamento institucional.</p>
-                <div class="benefit-grid">
-                    <div class="benefit-card">
-                        <strong>Pensamento lógico</strong>
-                        <p>Estimula resolução de problemas e raciocínio estruturado.</p>
-                    </div>
-                    <div class="benefit-card">
-                        <strong>Gamificação</strong>
-                        <p>Motiva alunos com desafios, rankings e progresso visual.</p>
-                    </div>
-                    <div class="benefit-card">
-                        <strong>Conteúdo real</strong>
-                        <p>Ensina classes, objetos, herança, polimorfismo e encapsulamento.</p>
-                    </div>
-                    <div class="benefit-card">
-                        <strong>Acompanhamento</strong>
-                        <p>Dashboards para professores monitorarem desempenho e dificuldades.</p>
-                    </div>
-                    <div class="benefit-card">
-                        <strong>Integração escolar</strong>
-                        <p>Rankings entre escolas incentivam competição saudável e colaboração.</p>
-                    </div>
-                    <div class="benefit-card">
-                        <strong>Acessibilidade</strong>
-                        <p>Compatível com dispositivos escolares e fácil implementação.</p>
-                    </div>
-                </div>
-            </section>
+        <!-- Diretores -->
+        <section class="py-5" id="diretores">
+          <h2 class="fw-bold mb-3">Como diretor, vale a pena?</h2>
+          <p class="text-secondary mb-4">
+            Sim. O jogo oferece um recurso pedagógico moderno...
+          </p>
+          <div class="row g-4">
+            <div class="col-sm-6 col-lg-4">
+              <div class="custom-card p-4">
+                <strong class="d-block mb-2">Pensamento lógico</strong>
+                <p class="text-secondary mb-0">
+                  Estimula resolução de problemas e raciocínio estruturado.
+                </p>
+              </div>
+            </div>
+            <div class="col-sm-6 col-lg-4">
+              <div class="custom-card p-4">
+                <strong class="d-block mb-2">Gamificação</strong>
+                <p class="text-secondary mb-0">
+                  Motiva alunos com desafios, rankings e progresso visual.
+                </p>
+              </div>
+            </div>
+            <div class="col-sm-6 col-lg-4">
+              <div class="custom-card p-4">
+                <strong class="d-block mb-2">Conteúdo real</strong>
+                <p class="text-secondary mb-0">
+                  Ensina classes, objetos, herança, polimorfismo e
+                  encapsulamento.
+                </p>
+              </div>
+            </div>
+            <div class="col-sm-6 col-lg-4">
+              <div class="custom-card p-4">
+                <strong class="d-block mb-2">Acompanhamento</strong>
+                <p class="text-secondary mb-0">
+                  Dashboards para professores monitorarem desempenho e
+                  dificuldades.
+                </p>
+              </div>
+            </div>
+            <div class="col-sm-6 col-lg-4">
+              <div class="custom-card p-4">
+                <strong class="d-block mb-2">Integração escolar</strong>
+                <p class="text-secondary mb-0">
+                  Rankings entre escolas incentivam competição saudável e
+                  colaboração.
+                </p>
+              </div>
+            </div>
+            <div class="col-sm-6 col-lg-4">
+              <div class="custom-card p-4">
+                <strong class="d-block mb-2">Acessibilidade</strong>
+                <p class="text-secondary mb-0">
+                  Compatível com dispositivos escolares e fácil implementação.
+                </p>
+              </div>
+            </div>
+          </div>
+        </section>
 
-            <section class="section" id="faq">
-                <h2>FAQ</h2>
-                <div class="faq-grid">
-                    <article class="faq-card">
-                        <h3>Preciso ter conhecimento prévio em programação?</h3>
-                        <p>Não. O jogo foi projetado para iniciantes e introduz os conceitos de forma gradual e contextualizada.</p>
-                    </article>
-                    <article class="faq-card">
-                        <h3>O jogo substitui aulas tradicionais?</h3>
-                        <p>Não. Ele funciona como uma ferramenta complementar que reforça a aprendizagem prática e amplia o conteúdo das aulas.</p>
-                    </article>
-                    <article class="faq-card">
-                        <h3>Como funciona o ranking entre escolas?</h3>
-                        <p>Os alunos acumulam pontos ao completar desafios, contribuindo para a pontuação geral da escola.</p>
-                    </article>
-                    <article class="faq-card">
-                        <h3>Professores conseguem acompanhar o progresso?</h3>
-                        <p>Sim. O design prevê painéis para monitorar desempenho, evolução e dificuldades dos alunos.</p>
-                    </article>
-                </div>
-            </section>
-        </main>
+        <!-- FAQ -->
+        <section class="py-5" id="faq">
+          <h2 class="fw-bold mb-3">FAQ</h2>
+          <div class="row g-4">
+            <div class="col-md-6">
+              <article class="custom-card p-4">
+                <h3 class="h5 fw-bold">
+                  Preciso ter conhecimento prévio em programação?
+                </h3>
+                <p class="text-secondary mb-0">
+                  Não. O jogo foi projetado para iniciantes e introduz os
+                  conceitos de forma gradual e contextualizada.
+                </p>
+              </article>
+            </div>
+            <div class="col-md-6">
+              <article class="custom-card p-4">
+                <h3 class="h5 fw-bold">O jogo substitui aulas tradicionais?</h3>
+                <p class="text-secondary mb-0">
+                  Não. Ele funciona como uma ferramenta complementar que reforça
+                  a aprendizagem prática e amplia o conteúdo das aulas.
+                </p>
+              </article>
+            </div>
+            <div class="col-md-6">
+              <article class="custom-card p-4">
+                <h3 class="h5 fw-bold">
+                  Como funciona o ranking entre escolas?
+                </h3>
+                <p class="text-secondary mb-0">
+                  Os alunos acumulam pontos ao completar desafios, contribuindo
+                  para a pontuação geral da escola.
+                </p>
+              </article>
+            </div>
+            <div class="col-md-6">
+              <article class="custom-card p-4">
+                <h3 class="h5 fw-bold">
+                  Professores conseguem acompanhar o progresso?
+                </h3>
+                <p class="text-secondary mb-0">
+                  Sim. O design prevê painéis para monitorar desempenho,
+                  evolução e dificuldades dos alunos.
+                </p>
+              </article>
+            </div>
+          </div>
+        </section>
+      </main>
 
-        <footer class="site-footer">
-            <p>© 2026 POO_WER | Paralaxis. Projeto Integrador DSM - Fatec.</p>
-            <p>Desenvolvido com HTML, CSS e visão pedagógica.</p>
-            <p><a href="paralaxis.html" class="button ghost">Voltar para Paralaxis</a></p>
-        </footer>
+      <footer
+        class="site-footer d-flex flex-wrap justify-content-between align-items-center mt-5 pt-4 pb-3"
+      >
+        <p class="mb-1">
+          © 2026 POO_WER | Paralaxis. Projeto Integrador DSM - Fatec.
+        </p>
+        <a href="paralaxis.html" class="btn btn-ghost-custom btn-sm"
+          >Voltar para Paralaxis</a
+        >
+      </footer>
     </div>
-</body>
+
+    <!-- Bootstrap JS -->
+    <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.3/dist/js/bootstrap.bundle.min.js"></script>
+  </body>
 </html>
