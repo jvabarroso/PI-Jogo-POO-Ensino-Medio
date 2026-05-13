@@ -26,7 +26,7 @@
             <ul class="navbar-nav ms-auto align-items-center gap-3">
                 <li class="nav-item"><a class="nav-link nav-link-custom" href="#top">Início</a></li>
                 <li class="nav-item"><a class="nav-link nav-link-custom" href="#recursos">Método</a></li>
-                <li class="nav-item"><a class="nav-link btn btn-light btn-sm fw-bold" href="index.html">POO_WER</a></li>
+                <li class="nav-item"><a class="nav-link nav-link-custom" href="#poower">POO_WER</a></li>
                 <li class="nav-item"><a class="nav-link nav-link-custom" href="#equipe">Equipe</a></li>
                 <li class="nav-item"><a class="nav-link nav-link-custom" href="#cta">Contato</a></li>
             </ul>
@@ -91,92 +91,24 @@
     </section>
 
     <!-- ===== POO_WER ===== -->
-    <section class="poower-section">
-        <div class="container">
-            <div class="row align-items-center g-5">
-                <div class="col-lg-6">
-                    <span class="badge bg-dark px-3 py-2 rounded-pill mb-3">🎮 NOVIDADE</span>
-                    <h2 class="fw-bold">Conheça o <span class="roxo">POO_WER</span></h2>
-                    <p>Um RPG Épico onde conceitos de Programação Orientada a Objetos são suas habilidades mágicas. Crie classes, instancie heróis, utilize herança para ganhar poderes e encapsule seus segredos contra os bugs inimigos.</p>
-                    <ul class="list-unstyled mt-3">
-                        <li>✅ Classes como Arquétipos de Personagens</li>
-                        <li>✅ Polimorfismo em Combates Táticos</li>
-                        <li>✅ Missões baseadas em Refatoração</li>
-                    </ul>
+    <section class="poower-section" id="poower">
+    <div class="container">
+        <div class="row justify-content-center text-center">
+            <div class="col-lg-8">
+                <h2 class="fw-bold mb-3">POO_WER: Programação Orientada a Objetos na prática</h2>
+                <p class="lead mb-4" style="color: #cbd5e1;">
+                    Um jogo sério que transforma classes, herança e polimorfismo em uma jornada 
+                    interplanetária. Alunos do ensino médio aprendem codificando desafios reais, 
+                    enquanto professores acompanham o progresso em tempo real. Tudo online, sem 
+                    instalação.
+                </p>
+                <div class="d-flex justify-content-center gap-3 flex-wrap">
+                    <a href="index.html" class="btn-cyber">Ir para o site do jogo</a>
                 </div>
-                <div class="col-lg-6">
-                    <!-- Card do Mago -->
-                    <div id="mockMageCard" class="mockup-glass">
-                        <div class="row align-items-center g-4">
-                            <div class="col-md-auto text-center">
-                                <div class="mage-circle"><span>🧙‍♂️✨</span></div>
-                                <div class="mage-name">MAGO MESTRE</div>
-                            </div>
-                            <div class="col">
-                                <div class="mage-bubble"><strong>📜 Bem-vindo à Tribo da Sobrecarga, jovem mago!</strong></div>
-                                <div class="mage-bubble"><span style="color:#ff7fe5; font-weight:700;">Sobrecarga</span> é quando um mesmo método tem versões diferentes, mudando os parâmetros. Exemplo: lançar <code style="background:#00000066; padding:2px 6px; border-radius:10px;">poder()</code> com 1, 2 ou 3 cristais – cada um causa um efeito distinto.</div>
-                                <div class="code-block-mini">
-                                    // Exemplo:<br>
-                                    poder(int cristal) → "🔥 Chama"<br>
-                                    poder(int cristal, String tipo) → "⚡ Raio elemental"<br>
-                                    poder() → "🔮 Magia arcana"
-                                </div>
-                                <div class="mage-bubble"><em>✨ Seu objetivo: complete as lacunas do código para lançar a magia com 2 cristais. Vamos praticar?</em></div>
-                                <div class="d-flex gap-2 flex-wrap mt-3">
-                                    <button id="mockPraticar" class="btn-mage"><span class="material-symbols-outlined">play_arrow</span> PRATICAR</button>
-                                    <button id="mockExplicar" class="btn-mage-outline"><span class="material-symbols-outlined">help</span> Mais explicação</button>
-                                </div>
-                            </div>
-                        </div>
-                    </div>
-
-                    <!-- Card do Quiz (inicialmente oculto) -->
-                    <div id="mockQuizCard" class="mockup-glass hidden-mock">
-                        <div class="row align-items-center g-4">
-                            <div class="col-md-auto text-center">
-                                <div class="mage-circle"><span>📋</span></div>
-                                <div class="mage-name">DESAFIO</div>
-                            </div>
-                            <div class="col">
-                                <div class="mage-bubble"><strong>Qual a definição correta de Sobrecarga (Overloading)?</strong></div>
-                                
-                                <div class="quiz-option">
-                                    <input type="radio" name="quizOverload" value="1" class="quiz-radio" id="q1">
-                                    <label for="q1" class="custom-radio"></label>
-                                    <label for="q1">Mesmo nome de método, mas com parâmetros diferentes (quantidade/tipo).</label>
-                                </div>
-                                <div class="quiz-option">
-                                    <input type="radio" name="quizOverload" value="0" class="quiz-radio" id="q2">
-                                    <label for="q2" class="custom-radio"></label>
-                                    <label for="q2">Dois métodos com o mesmo nome e os mesmos parâmetros.</label>
-                                </div>
-                                <div class="quiz-option">
-                                    <input type="radio" name="quizOverload" value="2" class="quiz-radio" id="q3">
-                                    <label for="q3" class="custom-radio"></label>
-                                    <label for="q3">Métodos com nomes diferentes e comportamentos similares.</label>
-                                </div>
-                                <div class="quiz-option">
-                                    <input type="radio" name="quizOverload" value="3" class="quiz-radio" id="q4">
-                                    <label for="q4" class="custom-radio"></label>
-                                    <label for="q4">Usar a palavra-chave 'override' no método.</label>
-                                </div>
-
-                                <div id="mockFeedback" class="feedback-box">📖 Selecione a alternativa correta e confira!</div>
-
-                                <div class="d-flex gap-2 mt-3">
-                                    <button id="mockVerificar" class="btn-mage"><span class="material-symbols-outlined">check_circle</span> VERIFICAR</button>
-                                    <button id="mockVoltar" class="btn-mage-outline"><span class="material-symbols-outlined">arrow_back</span> Voltar</button>
-                                </div>
-                            </div>
-                        </div>
-                    </div>
-                </div>
-            </div>
-            <div class="text-center mt-4">
-                <a href="index.html" class="btn-cyber">Ir para o site do jogo para saber mais</a>
             </div>
         </div>
-    </section>
+    </div>
+</section>
 
     <!-- ===== EQUIPE ===== -->
     <section id="equipe" class="py-5">
