@@ -334,9 +334,3 @@ body {
             color: #0f0f1a;
             box-shadow: 0 0 20px #c084fc;
         }
-
-        .img-mockup {
-          background: url('../imgs/mockup-prof.svg') center/contain no-repeat;
-          width: 100%;
-          min-height: 400px;
-        } 
