@@ -1,0 +1,368 @@
+<!doctype html>
+<html lang="pt-BR">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>POO_WER | Jogo Educacional de POO</title>
+    <meta
+      name="description"
+      content="POO_WER é um jogo sério para ensino de Programação Orientada a Objetos para alunos do ensino médio."
+    />
+    <!-- Bootstrap 5 CSS -->
+    <link
+      href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.3/dist/css/bootstrap.min.css"
+      rel="stylesheet"
+    />
+<link href="https://fonts.googleapis.com/css2?family=Material+Symbols+Outlined:opsz,wght,FILL,GRAD@20..48,400,0,1" rel="stylesheet">
+    <link rel="stylesheet" href="css/poower.css" />
+  </head>
+  <body class="pt-5 pt-md-4">
+    <div class="page-shell container">
+      <!-- Navbar fixa -->
+      <nav class="navbar navbar-expand-md fixed-top topbar">
+        <div class="container">
+          <div class="brand d-flex align-items-baseline gap-3">
+            <span class="brand-name">PARALAXIS</span>
+            <span class="brand-product"
+              ><img src="imgs/projeto/logo-poower.svg" alt="Logo POO_WER" height="30"
+            /></span>
+          </div>
+          <button
+            class="navbar-toggler border-0"
+            type="button"
+            data-bs-toggle="collapse"
+            data-bs-target="#mainNav"
+          >
+            <span class="navbar-toggler-icon"></span>
+          </button>
+          <div
+            class="collapse navbar-collapse justify-content-end"
+            id="mainNav"
+          >
+            <div class="navbar-nav gap-3">
+              <a class="nav-link" href="#inicio">Início</a>
+              <a class="nav-link" href="#sobre">Sobre</a>
+              <a class="nav-link" href="#onde">Onde jogar</a>
+              <a class="nav-link" href="#diretores">Instituições</a>
+              <a class="nav-link" href="#faq">FAQ</a>
+            </div>
+          </div>
+        </div>
+      </nav>
+
+      <main>
+        <!-- Hero -->
+        <section class="hero row align-items-center g-5 py-5 my-4" id="inicio">
+          <div class="col-lg-6">
+            <span class="eyebrow d-inline-block mb-3"
+              >🎮 Jogo sério educacional</span
+            >
+            <h1 class="fw-bold mb-4">
+              POO_WER: aprenda Programação Orientada a Objetos jogando
+            </h1>
+            <p class="text-secondary mb-4">
+              Explore um universo gamificado onde cada desafio transforma
+              planetas e leva estudantes do ensino médio a dominar classes,
+              objetos, herança, encapsulamento e polimorfismo.
+            </p>
+            <div class="d-flex gap-3 flex-wrap">
+              <a href="#onde" class="btn btn-primary-custom"
+                >🚀 Jogue agora no navegador</a
+              >
+              <a href="#diretores" class="btn btn-ghost-custom"
+                >📊 Ver vantagens para escolas</a
+              >
+            </div>
+          </div>
+          <aside class="col-lg-6">
+            <div class="hero-panel p-4 p-md-5">
+              <div class="panel-header small text-uppercase mb-3">
+                💻 terminal.poower
+              </div>
+              <pre class="terminal p-3 mb-0">
+$ iniciar poower --modo=educacional
+> Carregando módulos: navegação, personagens, desafios
+> Status: pronto para a missão
+> Objetivo: aprender POO com prática e propósito</pre
+              >
+            </div>
+          </aside>
+        </section>
+
+        <!-- Seção Sobre -->
+        <section class="py-5" id="sobre">
+          <h2 class="fw-bold mb-3">🎯 O que é este jogo?</h2>
+          <p class="text-secondary mb-4">
+            POO_WER é uma plataforma interativa desenvolvida para ensinar
+            Programação Orientada a Objetos a alunos do ensino médio de forma
+            lúdica, acessível e com foco em resultados reais.
+          </p>
+          <p class="text-secondary mb-5">
+            O jogo simula uma jornada interplanetária onde cada planeta
+            representa um conceito fundamental de POO...
+          </p>
+          <div class="row g-4 mb-5">
+            <div class="col-md-4">
+              <article class="custom-card p-4">
+                <h3 class="h5 fw-bold">🌍 Universo gamificado</h3>
+                <p class="text-secondary mb-0">
+                  Cada planeta representa um conceito de POO e evolui à medida
+                  que o estudante resolve desafios.
+                </p>
+              </article>
+            </div>
+            <div class="col-md-4">
+              <article class="custom-card p-4">
+                <h3 class="h5 fw-bold">📈 Progresso visível</h3>
+                <p class="text-secondary mb-0">
+                  As conquistas e transformações do mundo mostram o impacto
+                  direto do aprendizado.
+                </p>
+              </article>
+            </div>
+            <div class="col-md-4">
+              <article class="custom-card p-4">
+                <h3 class="h5 fw-bold">⚡ Metodologia ativa</h3>
+                <p class="text-secondary mb-0">
+                  O aluno aprende criando, testando e ajustando código em um
+                  ambiente inspirado em narrativas.
+                </p>
+              </article>
+            </div>
+          </div>
+          <div class="row g-4">
+            <div class="col-md-6">
+  <article class="custom-card p-4">
+    <img src="imgs/projeto/mockup-prof.svg" style="width: 100%; height: auto;">
+    <h3 class="fw-bold mt-4">👨‍🏫 Visão do Professor</h3>
+    <p class="text-secondary mb-0">
+      O jogo inclui painéis de acompanhamento para professores monitorarem o progresso dos alunos, identificarem dificuldades e adaptarem as aulas.
+    </p>
+  </article>
+</div>
+            <div class="col-md-6">
+              <article class="custom-card p-4">
+                    <!-- Card do Mago -->
+                    <div id="mockMageCard" class="mockup-glass">
+                        <div class="row align-items-center g-4">
+                            <div class="col-md-auto text-center">
+                                <div class="mage-circle"><span>🧙‍♂️✨</span></div>
+                                <div class="mage-name">MAGO MESTRE</div>
+                            </div>
+                            <div class="col">
+                                <div class="mage-bubble"><strong>📜 Bem-vindo à Tribo da Sobrecarga, jovem mago!</strong></div>
+                                <div class="mage-bubble"><span style="color:#ff7fe5; font-weight:700;">⚡ Sobrecarga</span> é quando um mesmo método tem versões diferentes, mudando os parâmetros. Exemplo: lançar <code style="background:#00000066; padding:2px 6px; border-radius:10px;">poder()</code> com 1, 2 ou 3 cristais – cada um causa um efeito distinto.</div>
+                                <div class="code-block-mini">
+                                    // Exemplo:<br>
+                                    poder(int cristal) → "🔥 Chama"<br>
+                                    poder(int cristal, String tipo) → "⚡ Raio elemental"<br>
+                                    poder() → "🔮 Magia arcana"
+                                </div>
+                                <div class="mage-bubble"><em>✨ Seu objetivo: complete as lacunas do código para lançar a magia com 2 cristais. Vamos praticar?</em></div>
+                                <div class="d-flex gap-2 flex-wrap mt-3">
+                                    <button id="mockPraticar" class="btn-mage"><span class="material-symbols-outlined">play_arrow</span> PRATICAR</button>
+                                    <button id="mockExplicar" class="btn-mage-outline"><span class="material-symbols-outlined">help</span> Mais explicação</button>
+                                </div>
+                            </div>
+                        </div>
+                        
+                    </div>
+
+                    <!-- Card do Quiz (inicialmente oculto) -->
+                    <div id="mockQuizCard" class="mockup-glass hidden-mock">
+                        <div class="row align-items-center g-4">
+                            <div class="col-md-auto text-center">
+                                <div class="mage-circle"><span>📋</span></div>
+                                <div class="mage-name">DESAFIO</div>
+                            </div>
+                            <div class="col">
+                                <div class="mage-bubble"><strong>Qual a definição correta de Sobrecarga (Overloading)?</strong></div>
+                                
+                                <div class="quiz-option">
+                                    <input type="radio" name="quizOverload" value="1" class="quiz-radio" id="q1">
+                                    <label for="q1" class="custom-radio"></label>
+                                    <label for="q1"> Mesmo nome de método, mas com parâmetros diferentes (quantidade/tipo).</label>
+                                </div>
+                                <div class="quiz-option">
+                                    <input type="radio" name="quizOverload" value="0" class="quiz-radio" id="q2">
+                                    <label for="q2" class="custom-radio"></label>
+                                    <label for="q2"> Dois métodos com o mesmo nome e os mesmos parâmetros.</label>
+                                </div>
+                                <div class="quiz-option">
+                                    <input type="radio" name="quizOverload" value="2" class="quiz-radio" id="q3">
+                                    <label for="q3" class="custom-radio"></label>
+                                    <label for="q3"> Métodos com nomes diferentes e comportamentos similares.</label>
+                                </div>
+                                <div class="quiz-option">
+                                    <input type="radio" name="quizOverload" value="3" class="quiz-radio" id="q4">
+                                    <label for="q4" class="custom-radio"></label>
+                                    <label for="q4"> Usar a palavra-chave 'override' no método.</label>
+                                </div>
+
+                                <div id="mockFeedback" class="feedback-box">📖 Selecione a alternativa correta e confira!</div>
+
+                                <div class="d-flex gap-2 mt-3">
+                                    <button id="mockVerificar" class="btn-mage"><span class="material-symbols-outlined">check_circle</span> VERIFICAR</button>
+                                    <button id="mockVoltar" class="btn-mage-outline"><span class="material-symbols-outlined">arrow_back</span> Voltar</button>
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+                    <h3 class="fw-bold mt-4">📝 Quiz exemplo para alunos</h3>
+                    <p class="text-secondary mb-0">
+                      Os alunos respondem perguntas e ganham pontos para avançar no jogo!
+                    </p>
+              </article>
+            </div>
+          </div>
+        </section>
+
+        <!-- Onde jogar -->
+        <section class="py-5" id="onde">
+          <h2 class="fw-bold mb-3">🌐 Onde posso jogá-lo?</h2>
+          <p class="text-secondary mb-4">
+            POO_WER foi concebido para ser acessado diretamente no navegador,
+            sem instalação...
+          </p>
+          <ul class="feature-list list-unstyled">
+            <li class="ps-4 position-relative mb-2">
+              🖥️ Execução web para acesso fácil em sala de aula
+            </li>
+            <li class="ps-4 position-relative mb-2">
+              📱 Compatível com ferramentas e dispositivos escolares
+            </li>
+            <li class="ps-4 position-relative mb-2">
+              🚀 Implantação simples para professores e coordenadores
+            </li>
+          </ul>
+        </section>
+
+        <!-- Diretores -->
+        <section class="py-5" id="diretores">
+          <h2 class="fw-bold mb-3">🏫 Como diretor, vale a pena?</h2>
+          <p class="text-secondary mb-4">
+            Sim. O jogo oferece um recurso pedagógico moderno...
+          </p>
+          <div class="row g-4">
+            <div class="col-sm-6 col-lg-4">
+              <div class="custom-card p-4">
+                <strong class="d-block mb-2">🧠 Pensamento lógico</strong>
+                <p class="text-secondary mb-0">
+                  Estimula resolução de problemas e raciocínio estruturado.
+                </p>
+              </div>
+            </div>
+            <div class="col-sm-6 col-lg-4">
+              <div class="custom-card p-4">
+                <strong class="d-block mb-2">🎮 Gamificação</strong>
+                <p class="text-secondary mb-0">
+                  Motiva alunos com desafios, rankings e progresso visual.
+                </p>
+              </div>
+            </div>
+            <div class="col-sm-6 col-lg-4">
+              <div class="custom-card p-4">
+                <strong class="d-block mb-2">📚 Conteúdo real</strong>
+                <p class="text-secondary mb-0">
+                  Ensina classes, objetos, herança, polimorfismo e
+                  encapsulamento.
+                </p>
+              </div>
+            </div>
+            <div class="col-sm-6 col-lg-4">
+              <div class="custom-card p-4">
+                <strong class="d-block mb-2">📊 Acompanhamento</strong>
+                <p class="text-secondary mb-0">
+                  Dashboards para professores monitorarem desempenho e
+                  dificuldades.
+                </p>
+              </div>
+            </div>
+            <div class="col-sm-6 col-lg-4">
+              <div class="custom-card p-4">
+                <strong class="d-block mb-2">🤝 Integração escolar</strong>
+                <p class="text-secondary mb-0">
+                  Rankings entre escolas incentivam competição saudável e
+                  colaboração.
+                </p>
+              </div>
+            </div>
+            <div class="col-sm-6 col-lg-4">
+              <div class="custom-card p-4">
+                <strong class="d-block mb-2">♿ Acessibilidade</strong>
+                <p class="text-secondary mb-0">
+                  Compatível com dispositivos escolares e fácil implementação.
+                </p>
+              </div>
+            </div>
+          </div>
+        </section>
+
+        <!-- FAQ -->
+        <section class="py-5" id="faq">
+          <h2 class="fw-bold mb-3">❓ FAQ</h2>
+          <div class="row g-4">
+            <div class="col-md-6">
+              <article class="custom-card p-4">
+                <h3 class="h5 fw-bold">🤔 Preciso ter conhecimento prévio em programação?</h3>
+                <p class="text-secondary mb-0">
+                  Não. O jogo foi projetado para iniciantes e introduz os
+                  conceitos de forma gradual e contextualizada.
+                </p>
+              </article>
+            </div>
+            <div class="col-md-6">
+              <article class="custom-card p-4">
+                <h3 class="h5 fw-bold">🏫 O jogo substitui aulas tradicionais?</h3>
+                <p class="text-secondary mb-0">
+                  Não. Ele funciona como uma ferramenta complementar que reforça
+                  a aprendizagem prática e amplia o conteúdo das aulas.
+                </p>
+              </article>
+            </div>
+            <div class="col-md-6">
+              <article class="custom-card p-4">
+                <h3 class="h5 fw-bold">
+                  🏆 Como funciona o ranking entre escolas?
+                </h3>
+                <p class="text-secondary mb-0">
+                  Os alunos acumulam pontos ao completar desafios, contribuindo
+                  para a pontuação geral da escola.
+                </p>
+              </article>
+            </div>
+            <div class="col-md-6">
+              <article class="custom-card p-4">
+                <h3 class="h5 fw-bold">
+                  👩‍🏫 Professores conseguem acompanhar o progresso?
+                </h3>
+                <p class="text-secondary mb-0">
+                  Sim. O design prevê painéis para monitorar desempenho,
+                  evolução e dificuldades dos alunos.
+                </p>
+              </article>
+            </div>
+          </div>
+        </section>
+        <section class="py-5" id="desenvolvedora">
+  <div class="custom-card p-4 p-md-5 text-center">
+    <h2 class="fw-bold mb-3">🎮 Conheça a desenvolvedora</h2>
+    <p class="text-secondary mb-4">
+      A <strong>Paralaxis</strong> é um estúdio de tecnologia educacional formado por alunos da Fatec Registro.
+      Unimos gamificação e design intuitivo para transformar o aprendizado de programação em uma experiência envolvente.
+    </p>
+    <a href="index.html" class="btn btn-ghost-custom">🚀 Visitar site da Paralaxis</a>
+  </div>
+</section>
+      </main>
+
+      <footer class="site-footer d-flex flex-wrap justify-content-between align-items-center mt-5 pt-4 pb-3">
+        <p class="mb-1"> © 2026 POO_WER | Paralaxis. Projeto Integrador DSM - Fatec.</p>
+      </footer>
+    </div>
+
+    <!-- Bootstrap JS -->
+    <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.3/dist/js/bootstrap.bundle.min.js"></script>
+  </body>
+  <script src="js/script.js"></script>
+</html>
